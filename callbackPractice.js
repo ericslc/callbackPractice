@@ -80,11 +80,12 @@ multiply(4, 3, function(answer){
 
 
   //Code Here for contains
-  function contains(arr, id, cb){
-    names.forEach(var i = 0; i < arr.length; i++){
+  function contains(arr, cb){
+    names.forEach(cb(arr));
+    return true;
 
     }return cb(id);
-  }*/
+  }
 
 
   var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
@@ -156,6 +157,7 @@ each(names, function(item, indice){
  //code here for getUserById
 function getUserById(users, cb){
 for(var p in users){
+  return users
 
 }
 }
